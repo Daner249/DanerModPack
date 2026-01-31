@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanerPack 249 - Мод-паки для Steam игр</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-title" content="DanerPack 249">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23FF6B00%22>🎮</text></svg>">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="grid-lines"></div>
+    </div>
+
+    <!-- Кнопка меню для мобильных -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Навигация -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <span class="logo-text">Daner</span>
+                    <span class="logo-number">249</span>
+                    <span class="logo-pack">Pack</span>
+                </div>
+                <div class="tagline">Мод-паки для настоящих геймеров</div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-page="home">
+                    <i class="fas fa-home"></i>
+                    <span>Главная</span>
+                    <div class="link-indicator"></div>
+                </a></li>
+                <li><a href="#" class="nav-link" data-page="games">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Игры</span>
+                    <div class="link-indicator"></div>
+                </a></li>
+                <li><a href="#" class="nav-link" data-page="modpacks">
+                    <i class="fas fa-download"></i>
+                    <span>Мод-паки</span>
+                    <div class="link-indicator"></div>
+                </a></li>
+                <li><a href="#" class="nav-link" data-page="community">
+                    <i class="fas fa-users"></i>
+                    <span>Сообщество</span>
+                    <div class="link-indicator"></div>
+                </a></li>
+                <li><a href="#" class="nav-link" data-page="upload">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Загрузить</span>
+                    <div class="link-indicator"></div>
+                </a></li>
+                <li><a href="#" class="nav-link cta-button">
+                    <i class="fas fa-crown"></i>
+                    <span>Daner 249</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главный контент -->
+    <main class="main-content">
+        <!-- Герой секция -->
+        <section class="hero-section slide-down-animation">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Твой мир</span>
+                    <span class="hero-title-accent">игр</span>
+                    <span class="hero-title-sub">преобразится</span>
+                </h1>
+                <p class="hero-description">
+                    Эксклюзивные мод-паки от <span class="highlight">Daner 249</span> для лучших Steam игр. 
+                    Улучшай геймплей, добавляй контент и получай незабываемые впечатления.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="249">0</div>
+                        <div class="stat-label">Эксклюзивных модов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="47">0</div>
+                        <div class="stat-label">Поддержанных игр</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="8921">0</div>
+                        <div class="stat-label">Участников</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="floating-number">249</div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+            </div>
+        </section>
+
+        <!-- Игровая карточка R.E.P.O. -->
+        <section class="game-section">
+            <div class="section-header slide-down-animation">
+                <h2 class="section-title">
+                    <i class="fas fa-fire"></i>
+                    <span>Игра недели</span>
+                </h2>
+                <div class="section-subtitle">Лучший мод-пак от Daner 249</div>
+            </div>
+
+            <div class="game-card featured slide-down-animation">
+                <div class="game-card-header">
+                    <div class="game-badges">
+                        <span class="game-badge new">НОВИНКА</span>
+                        <span class="game-badge hot">ГОРЯЧЕЕ</span>
+                        <span class="game-badge exclusive">ЭКСКЛЮЗИВ DANER</span>
+                    </div>
+                    <div class="game-title-section">
+                        <h3 class="game-title">R.E.P.O.</h3>
+                        <div class="game-subtitle">Физический кооперативный хоррор</div>
+                    </div>
+                </div>
+
+                <div class="game-card-content">
+                    <div class="game-image-container">
+                        <div class="game-image-main">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/3241660/header.jpg" 
+                                 alt="R.E.P.O. - игровой скриншот" 
+                                 class="game-image"
+                                 onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'">
+                            <div class="image-overlay">
+                                <div class="player-count">
+                                    <i class="fas fa-users"></i>
+                                    <span>До 6 игроков</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-thumbnails">
+                            <div class="thumbnail active" data-image="https://cdn.cloudflare.steamstatic.com/steam/apps/3241660/header.jpg">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/3241660/header.jpg" alt="R.E.P.O. 1">
+                            </div>
+                            <div class="thumbnail" data-image="https://avatars.mds.yandex.net/i?id=d09a221ac74c0f1c28422d3ebe7ab1c422f2719f-4210399-images-thumbs&n=13">
+                                <img src="https://avatars.mds.yandex.net/i?id=d09a221ac74c0f1c28422d3ebe7ab1c422f2719f-4210399-images-thumbs&n=13" alt="R.E.P.O. 2">
+                            </div>
+                            <div class="thumbnail" data-image="https://cdn.mos.cms.futurecdn.net/5vzryPfnjQsyPbbCyxWSWD.jpg">
+                                <img src="https://cdn.mos.cms.futurecdn.net/5vzryPfnjQsyPbbCyxWSWD.jpg" alt="R.E.P.O. 3">
+                            </div>
+                            <div class="thumbnail" data-image="https://avatars.mds.yandex.net/i?id=0deac0a1048628da52ce333461e05f62_l-10104341-images-thumbs&n=13">
+                                <img src="https://avatars.mds.yandex.net/i?id=0deac0a1048628da52ce333461e05f62_l-10104341-images-thumbs&n=13" alt="R.E.P.O. 4">
+                            </div>
+                            <div class="thumbnail" data-image="https://i.pinimg.com/736x/59/55/0d/59550def9e2a8610a63228f10f4299bc.jpg">
+                                <img src="https://i.pinimg.com/736x/59/55/0d/59550def9e2a8610a63228f10f4299bc.jpg" alt="R.E.P.O. 5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-info">
+                        <div class="game-description">
+                            <p><strong>R.E.P.O.</strong> — кооперативный хоррор для 6 игроков с продвинутой физикой и чатом по близости. Вы работаете на таинственного создателя, собирая ценные объекты в заброшенных местах.</p>
+                            <div class="features-list">
+                                <div class="feature">
+                                    <i class="fas fa-robot feature-icon"></i>
+                                    <div class="feature-text">
+                                        <h4>Реалистичная физика</h4>
+                                        <p>Все объекты подчиняются законам физики</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-walkie-talkie feature-icon"></i>
+                                    <div class="feature-text">
+                                        <h4>Голосовой чат</h4>
+                                        <p>Общайтесь с командой, но будьте осторожны</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-tools feature-icon"></i>
+                                    <div class="feature-text">
+                                        <h4>Улучшения</h4>
+                                        <p>Прокачивайте персонажа и оружие</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="game-actions">
+                            <div class="action-buttons">
+                                <a href="https://store.steampowered.com/app/3241660/REPO/" 
+                                   class="action-btn steam-btn" 
+                                   target="_blank">
+                                    <i class="fab fa-steam"></i>
+                                    <span>Купить в Steam</span>
+                                    <div class="btn-pulse"></div>
+                                </a>
+                                
+                                <a href="" class="action-btn modpack-btn download-trigger">
+                                    <i class="fas fa-download"></i>
+                                    <span>Скачать DanerPack</span>
+                                    <div class="btn-shine"></div>
+                                </a>
+                                
+                                <a href="#" class="action-btn info-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>Детали мод-пака</span>
+                                </a>
+                            </div>
+                            
+                            <div class="mod-info">
+                                <h4><i class="fas fa-crown"></i> Что входит в DanerPack:</h4>
+                                <ul class="mod-features">
+                                    <li>Улучшенная графика и текстуры</li>
+                                    <li>Новые типы врагов и ИИ</li>
+                                    <li>Дополнительное оборудование</li>
+                                    <li>Эксклюзивные локации</li>
+                                    <li>Оптимизация производительности</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Другие игры -->
+        <section class="other-games-section">
+            <div class="section-header slide-down-animation">
+                <h2 class="section-title">
+                    <i class="fas fa-th-large"></i>
+                    <span>Другие игры с мод-паками</span>
+                </h2>
+                <div class="section-subtitle">Все проекты поддерживаются Daner 249</div>
+            </div>
+
+            <div class="games-grid">
+                <!-- Игра 1 -->
+                <div class="game-card-small slide-down-animation" style="animation-delay: 0.1s">
+                    <div class="game-card-small-header">
+                        <div class="game-small-badge">НОВЫЙ</div>
+                        <div class="game-small-title">Phasmophobia</div>
+                    </div>
+                    <div class="game-small-image">
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/header.jpg" alt="Phasmophobia">
+                        <div class="game-small-overlay">
+                            <div class="game-small-rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-small-info">
+                        <p>Мод-пак добавляет новых призраков, оборудование и локации</p>
+                        <div class="game-small-actions">
+                            <a href="#" class="btn-small mod-btn">
+                                <i class="fas fa-download"></i> Мод-пак
+                            </a>
+                            <a href="https://store.steampowered.com/app/739630/Phasmophobia/" 
+                               class="btn-small steam-btn" 
+                               target="_blank">
+                                <i class="fab fa-steam"></i> Steam
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Игра 2 -->
+                <div class="game-card-small slide-down-animation" style="animation-delay: 0.2s">
+                    <div class="game-card-small-header">
+                        <div class="game-small-badge">ПОПУЛЯРНОЕ</div>
+                        <div class="game-small-title">Lethal Company</div>
+                    </div>
+                    <div class="game-small-image">
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/header.jpg" alt="Lethal Company">
+                        <div class="game-small-overlay">
+                            <div class="game-small-rating">
+                                <i class="fas fa-star"></i> 4.7
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-small-info">
+                        <p>Новые монстры, скины и задания для кооператива</p>
+                        <div class="game-small-actions">
+                            <a href="#" class="btn-small mod-btn">
+                                <i class="fas fa-download"></i> Мод-пак
+                            </a>
+                            <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" 
+                               class="btn-small steam-btn" 
+                               target="_blank">
+                                <i class="fab fa-steam"></i> Steam
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Игра 3 -->
+                <div class="game-card-small slide-down-animation" style="animation-delay: 0.3s">
+                    <div class="game-card-small-header">
+                        <div class="game-small-badge">ОБНОВЛЕНО</div>
+                        <div class="game-small-title">Valheim</div>
+                    </div>
+                    <div class="game-small-image">
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/892970/header.jpg" alt="Valheim">
+                        <div class="game-small-overlay">
+                            <div class="game-small-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-small-info">
+                        <p>Моды на строительство, новые биомы и врагов</p>
+                        <div class="game-small-actions">
+                            <a href="#" class="btn-small mod-btn">
+                                <i class="fas fa-download"></i> Мод-пак
+                            </a>
+                            <a href="https://store.steampowered.com/app/892970/Valheim/" 
+                               class="btn-small steam-btn" 
+                               target="_blank">
+                                <i class="fab fa-steam"></i> Steam
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Игра 4 -->
+                <div class="game-card-small slide-down-animation" style="animation-delay: 0.4s">
+                    <div class="game-card-small-header">
+                        <div class="game-small-badge">СКОРО</div>
+                        <div class="game-small-title">Pacific Drive</div>
+                    </div>
+                    <div class="game-small-image">
+                        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1458140/header.jpg" alt="Pacific Drive">
+                        <div class="game-small-overlay">
+                            <div class="game-small-rating">
+                                <i class="fas fa-star"></i> 4.6
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-small-info">
+                        <p>Мод-пак в разработке. Новые машины и аномалии</p>
+                        <div class="game-small-actions">
+                            <a href="#" class="btn-small mod-btn disabled">
+                                <i class="fas fa-clock"></i> Скоро
+                            </a>
+                            <a href="https://store.steampowered.com/app/1458140/Pacific_Drive/" 
+                               class="btn-small steam-btn" 
+                               target="_blank">
+                                <i class="fab fa-steam"></i> Steam
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция характеристик -->
+        <section class="features-section">
+            <div class="section-header slide-down-animation">
+                <h2 class="section-title">
+                    <i class="fas fa-bolt"></i>
+                    <span>Почему DanerPack?</span>
+                </h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card slide-down-animation" style="animation-delay: 0.1s">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="feature-title">Безопасность</h3>
+                    <p class="feature-description">Все мод-паки проверяются на отсутствие вирусов и вредоносного кода</p>
+                    <div class="feature-number">01</div>
+                </div>
+
+                <div class="feature-card slide-down-animation" style="animation-delay: 0.2s">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="feature-title">Обновления</h3>
+                    <p class="feature-description">Регулярные обновления для совместимости с новыми версиями игр</p>
+                    <div class="feature-number">02</div>
+                </div>
+
+                <div class="feature-card slide-down-animation" style="animation-delay: 0.3s">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="feature-title">Поддержка</h3>
+                    <p class="feature-description">Помощь с установкой и решением проблем от сообщества</p>
+                    <div class="feature-number">03</div>
+                </div>
+
+                <div class="feature-card slide-down-animation" style="animation-delay: 0.4s">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="feature-title">Эксклюзив</h3>
+                    <p class="feature-description">Уникальный контент, созданный специально для DanerPack</p>
+                    <div class="feature-number">249</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="main-footer slide-down-animation">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Daner</span>
+                        <span class="logo-number">249</span>
+                        <span class="logo-pack">Pack</span>
+                    </div>
+                    <p class="footer-tagline">Мод-паки, которые меняют игры</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Быстрые ссылки</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Все игры</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Популярные моды</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Инструкции</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> ЧаВо</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Сообщество</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Форум</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Загрузки</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Предложения</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Баги</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Контакты</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> daner249@modpack.com</p>
+                        <p><i class="fas fa-globe"></i> danerpack249.com</p>
+                        <div class="newsletter">
+                            <input type="email" placeholder="Ваш email">
+                            <button class="subscribe-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2026 DanerPack 249. Все права защищены. Steam и логотип Steam являются товарными знаками Valve Corporation Милана??.
+                </div>
+                <div class="footer-numbers">
+                    <span class="footer-number">249</span>
+                    <span class="footer-number">42</span>
+                    <span class="footer-number">141</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Модальное окно загрузки -->
+    <div class="modal-overlay" id="downloadModal">
+        <div class="modal-content slide-down-animation">
+            <div class="modal-header">
+                <h3><i class="fas fa-download"></i> Скачать DanerPack</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="download-options">
+                    <div class="download-option">
+                        <div class="option-icon">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                        <div class="option-info">
+                            <h4>Полный пакет</h4>
+                            <p>Все моды и улучшения (1.2 GB)</p>
+                        </div>
+                        <a href="https://disk.yandex.ru/d/uLg7ZaiTbkyKoQ" class="option-download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="download-option">
+                        <div class="option-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <div class="option-info">
+                            <h4>Только графика</h4>
+                            <p>Текстуры и эффекты (450 MB)</p>
+                        </div>
+                        <a href="#" class="option-download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="download-option">
+                        <div class="option-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="option-info">
+                            <h4>Контент</h4>
+                            <p>Новые враги и предметы (780 MB)</p>
+                        </div>
+                        <a href="#" class="option-download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="download-instructions">
+                    <h4><i class="fas fa-info-circle"></i> Инструкция по установке:</h4>
+                    <ol>
+                        <li>Распакуйте архив в папку с игрой</li>
+                        <li>Запустите файл install.bat</li>
+                        <li>Следуйте инструкциям установщика</li>
+                        <li>Наслаждайтесь игрой!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="script.js"></script>
+</body>
+</html>
